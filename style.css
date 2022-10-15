@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-image: url("https://www.tripsavvy.com/thmb/UvTVS90MvvcEDON6bcpDfChwxiU=/2185x1371/filters:fill(auto,1)/jenne-farm-fall-GettyImages-103455623-663fb3e426be48c9ab24d71536a82594.jpg");
+    width:100%;
+}
+header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px  100px;
+    z-index: 10;
+    background:rgb(189, 125, 6);
+    position:sticky;
+}
+header .logo {
+   position: relative;
+   border-radius: 30px;
+   width: 50px;
+   height: 50px;
+   border: solid burlywood;
+   box-shadow: 1px 1px;
+}
+header .logo:hover {
+    border: 4px solid rosybrown;
+}
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+
+}
+header .navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+header .navigation li a {
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+header .navigation li a:hover {
+background-color: beige;
+}
+header .search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+header .search input {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background:transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius:4px ;
+    padding: 0 a0px 0 45px;
+}
+header .search input::placeholder {
+color: white;
+}
+.content {
+    background-image: url("https://th.bing.com/th/id/R.5e1ad950705cb3c312e5965dbda123ef?rik=vdDGHkBRKJoPSA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5sy3ZIHPCGU%2fTmOs92C2LcI%2fAAAAAAAAACE%2fEWhV2HZrSbg%2fs1600%2fFarms-Wallpapers-2.jpg&ehk=H4B6xMgrTaHJcqXrbNsXMzRXJqjthF7usX6P0845YCc%3d&risl=&pid=ImgRaw&r=0");
+    margin-top:0;
+    padding:80px 80px 80px;
+    justify-content: center;
+    position: sticky;
+    align-items:center;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    max-height: 600px; 
+    background-attachment: fixed;   
+}
+.content .Media-Box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    margin: 128px 72px 72px;
+    gap: 24px;
+    padding: 50px;
+    border: 3px solid rgb(228, 150, 35);
+    border-radius: 200px;
+    box-shadow: 2px 2px 20px 2px;
+    background: rgba(90, 80, 57, 0.7);
+    width:fit-content;
+    flex: 0.5 0.5 auto;
+    max-height: 465px;
+    bottom:10px; 
+    height:fit-content;
+
+}
+.content .Media-Box .text {
+    display:flex;
+    flex-direction:column;
+    gap: 65px;
+    align-items: flex-start;
+    padding-left:32px;
+    flex: 1 1 auto;
+    font-size:large;
+    position:relative;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;  
+    width:400px;
+  }
+  .content .Media-Box .text h1{
+      font-family: 'Lobster';
+  }
+  .content .Media-Box .text p {
+      font-family: 'Josefin Sans';
+      font-size:larger;
+      color:rgb(250, 250, 250);
+    
+  }
+
+img {
+    border-radius: 50%;
+    border:7px solid rgb(211, 163, 99);
+    box-shadow: 3px 3px;
+    object-fit: cover;
+    flex: 0.3 0.3 auto;
+    display: flex;
+    max-width: 300px;
+
+}
+.Cluck-button {
+    background-color: rgb(172, 155, 136);
+    padding:10px;
+    border-radius: 8px;
+    width: 100px;
+    box-shadow: 2px 2px 2px;
+    position: relative;
+}
+.Cluck-button:hover{
+    background-color: rgb(226, 144, 49);
+    cursor: pointer;
+}
+
+.team-title {
+    color: rgb(175, 114, 0);
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 55px 0 50px;
+    background:rgb(228, 218, 206)
+}
+
+.Ourteam {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 65px;
+    background: linear-gradient(beige, rgb(158, 97, 22),gray);
+    padding-bottom: 128px;
+    max-height: fit-content;
+  }
+.worker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+.worker-icon {
+    width: 200px;
+    height: 200px;
+    border: 12px solid rgb(230, 250, 250);
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    object-fit: cover;
+  }
+  
+.worker-text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    padding: 128px 192px 96px;
+    background-color: rgb(238, 185, 117);
+    font-size: 24px;
+    line-height: 150%;
+    font-style: italic;
+    margin-top: 150px;
+    border-radius: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.514);
+  }
+.quote-section p {
+    text-align: end;
+    font-style: normal;
+    font-weight: 600;
+    color: sienna;
+  }
+  .train-title {
+    color: rgb(175, 114, 0);
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 55px 0 50px;
+    background:rgb(133, 130, 127);
+    margin-top: 250px;
+}
+
+.training {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 80px;
+    background: linear-gradient(beige, rgb(158, 97, 22),gray);
+    padding-bottom: 128px;
+    max-height: fit-content;
+    height: 800px;
+  }
+.train {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+  }
+  
+.train-icon {
+    width: 250px;
+    height: 200px;
+    border: 12px solid rgb(230, 250, 250);
+    border-radius: 32px;
+    box-shadow: 5px 5px 6px black;
+    object-fit: cover;
+  }
+  
+.train-text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+  .train-section {
+    display: flex;
+    flex-direction: column;
+    padding: 128px 192px 96px;
+    background-color: rgb(248, 225, 195);
+    font-size: 24px;
+    line-height: 150%;
+    font-style: italic;
+    margin-top: 150px;
+    border-radius: 20px;
+    max-height: fit-content;
+    border: 5px solid rgba(255, 255, 255, 0.514);
+    margin-top: 0px;
+    box-shadow: 8px 8px 8px black;
+  }
+.train-section p {
+    text-align: end;
+    font-style: normal;
+    font-weight: 600;
+    color: sienna;
+  }
+  .vid-section {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 180px 90px;
+    background-color: rgb(238, 185, 117);
+    font-size: 24px;
+    line-height: 150%;
+    font-style: italic;
+    align-items: center;
+    margin-top: 120px;
+    border-radius: 20px;
+    height:fit-content;
+    border: 5px solid rgba(255, 255, 255, 0.514);
+  }
+
+  .signup-section {
+    display: flex;
+    align-items: center;
+    background: rgba(90, 80, 57, 0.7);
+    border: 3px solid rgb(228, 150, 35);
+    border-radius: 24px;
+    box-shadow: 2px 2px 3px black;
+    margin: 140px auto;
+    padding: 40px 48px;
+    max-width: 1100px;
+    position:relative;
+    top: 680px;
+    max-height: fit-content;
+    margin-top: 0;
+
+  }
+  
+  .email-text h2 {
+    color: rgb(247, 132, 0);
+    text-shadow: 1px 1px black;
+    font-family: 'Titan One', Arial, Helvetica, sans-serif;
+    padding-bottom: 8px;
+  }
+  
+  .email-text p {
+    padding-right: 24px;
+  }
+  
+  .email-btn {
+    flex-shrink: 0;
+    height: 45px;
+    width: 128px;
+    padding: 4px 24px;
+    margin: 24px auto;
+    background-color:rgb(221, 215, 196);
+    border-radius: 4px;
+    border: 3px solid rgb(221, 200, 143);
+    box-shadow: 2px 2px 3px black;
+    font-weight: 400;
+  }
+  
+  .email-btn:hover {
+    font-weight: 700;
+    background-color: rgb(240, 214, 193);
+    border-color: rgb(255, 174, 0);
+    cursor: pointer;
+  }
+  
+  footer p {
+    padding: 24px;
+    text-align: center;
+    color: black;
+    background-color: rgb(231, 162, 83);
+    top: 700px;
+    position: relative;
+  }
+  
